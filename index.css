@@ -4,8 +4,12 @@ body {
   font-size: 66px;
   font-size: 29px;
   width: 298px;
-  height: 4px;
 
+  /* 10px */
+  height: 0.625rem;
+
+  /* 19px */
+  height: 1.1875rem;
   /* 28px */
   height: 1.75rem;
 
@@ -14,4 +18,6 @@ body {
 
   /* 80px */
   height: 5rem;
+  /* 584px */
+  height: 36.5rem;
 }
