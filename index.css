@@ -1,9 +1,17 @@
 body {
-  font-size: 4.25rem;
-  font-size: 26.375rem;
-  font-size: 4.125rem;
-  font-size: 1.8125rem;
-  width: 18.625rem;
-  height: 0.25rem;
-  height: 6.5rem;
+  font-size: 68px;
+  font-size: 422px;
+  font-size: 66px;
+  font-size: 29px;
+  width: 298px;
+  height: 4px;
+
+  /* 28px */
+  height: 1.75rem;
+
+  /* 60px */
+  height: 3.75rem;
+
+  /* 80px */
+  height: 5rem;
 }
