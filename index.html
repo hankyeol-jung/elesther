@@ -10,20 +10,93 @@
 
     <title>Document</title>
 
-    <!-- <style type="text/tailwindcss">
-      @layer utilities {
-        .content-auto {
-          content-visibility: auto;
-        }
+    <script>
+      //   module.exports = {
+      //     theme: {
+      //       colors: {
+      //         white: "#666666",
+      //       },
+      //       extend: {
+      //         colors: {
+      //           "main-dark": "#191B22",
+      //         },
+      //       },
+      //     },
+      //   };
+    </script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Sans:ital,wght@1,400;1,500&display=swap");
+      html {
+        font-family: "Noto Sans", sans-serif;
       }
     </style>
-
-    <script>
-      tailwind.config = { theme: { extend: { colors: { red: "#da373d" } } } };
-    </script> -->
   </head>
-  <body>
-    <h2 class="text-3xl font-bold underline text-red">Hello world!</h2>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="bg-[#191B22] flex items-center h-screen">
+    <div
+      class="bg-[#ddd] px-[4.25rem] pt-[1.8125rem] pb-[4.125rem] w-[47.125rem] m-auto rounded-lg"
+    >
+      <form class="" action="#" method="POST">
+        <input type="hidden" name="remember" value="true" />
+        <h1 class="mb-12">
+          <a href="" class="w-[18.625rem] mx-auto block">
+            <img class="" src="/image/logo.png" alt="" />
+          </a>
+        </h1>
+        <div class="flex justify-between">
+          <div class="flex flex-col justify-between w-[26.375rem]">
+            <!-- 사용자 인풋 -->
+            <div class="flex justify-between items-center">
+              <label for="id" class="text-lg text-[#606060] font-semibold"
+                >사용자</label
+              >
+              <input
+                class="rounded w-[19.25rem] border-none bg-[#FFFBF9]"
+                id="id"
+                name="id"
+                type="text"
+                required
+                placeholder="ID"
+              />
+            </div>
+            <!-- 비밀번호 인풋 -->
+            <div class="flex justify-between items-center mt-[1.125rem]">
+              <label for="password" class="text-lg text-[#606060] font-semibold"
+                >비밀번호</label
+              >
+              <input
+                class="rounded w-[19.25rem] border-none bg-[#FFFBF9]"
+                id="password"
+                name="password"
+                type="password"
+                required
+                placeholder="Password"
+              />
+            </div>
+            <!-- 상태유지 체크박스 -->
+            <div class="flex items-center mt-[1.125rem] ml-[7.125rem]">
+              <input
+                id="remember-me"
+                name="remember-me"
+                type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+              />
+              <label
+                for="remember-me"
+                class="ml-2 block text-lg text-[#606060] font-medium"
+                >로그인 상태 유지</label
+              >
+            </div>
+          </div>
+          <!-- 로그인 버튼 -->
+          <button
+            type="submit"
+            class="w-40 bg-[#191B22] text-white p-9 rounded-md h-[6.125rem] text-xl font-semibold"
+          >
+            로그인
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
